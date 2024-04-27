@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        <div class="divider">hello</div>
+        <div class="divider">world</div>
+        <div class="divider">or</div>
+        <div class="divider">what is going on?</div>
+        <style>
+            .divider{
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+            }
+            .divider::before,.divider::after{
+                flex-grow: 1;
+                content: '';
+                padding: 1px;
+                background-color: red;
+                margin: 25px;
+            }
+            
+        </style>
+    </body>
+</html>

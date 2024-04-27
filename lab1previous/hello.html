@@ -1,0 +1,62 @@
+<html>
+
+    <body>
+        <div id="hello"></div>
+    </body>
+    <script>
+        class BillyWolrd{
+            constructor(what,ever){
+                this.name = what;
+                this.url = ever;
+            }
+            say(){
+                console.log(this.name);
+                document.write("<p>"+this.name+"</p>")
+                document.write("<a href='"+this.url+"''>HelloUrl</a>")
+            }
+        }
+        let bw = new BillyWolrd("what","http://www.goodmoring.com")
+        bw.say()
+        function testFun(){
+            console.log("hello world.........")
+            document.writeln(Date())
+            document.writeln("Date()")
+            document.write("<br />")
+            document.writeln("window width:"+s_width)
+            document.write("<br />")
+            document.writeln("window height:"+s_height)
+            document.write("<br />")
+
+        }
+        testFun();
+        var myFunc = new Function(
+
+            document.writeln("Hello function world.......shape jing"),
+            document.write("<br />"),
+            document.writeln("Hello function second sentence")
+        )
+        myFunc();
+        (()=>{document.write("Hello arrow function")})() // self invoke function ()()
+       
+
+        var s_width = window.innerWidth
+        var s_height = window.innerHeight
+
+
+        
+        
+        var s_dv = document.createElement("p")
+        var node = document.createTextNode("hello world")
+        s_dv.appendChild(node)
+        var s_body = document.getElementById("hello")
+        s_body.appendChild(s_dv)
+        s_dv.style.color="blue"
+        s_dv.style.backgroundColor="orange"
+        s_dv.onclick = function(){
+            console.log("hl");
+            s_dv.style.color="red"
+        }
+
+        // window.alert("what is going on")
+    </script>
+</html>

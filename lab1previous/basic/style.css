@@ -1,0 +1,50 @@
+/* css also have functions */
+a.example{
+    display: inline;
+    background-color: #e2e2e2;
+    padding: 10px;
+    
+}
+a.pseudo_ele_before::before{
+    content: '++++';
+}
+a.pseudo_ele_after::after{
+    content: '++++';
+}
+.pseudo_ele_select::first-letter{
+    color: red;
+}
+.pseudo_ele_marker::marker{
+    color: red;
+    font-size: 23px;
+}
+div.size{
+    text-decoration:line-through;
+    border: 5px solid red;
+    width: 200px;
+    height: 50;
+}
+div.inner{
+    width: 90%;
+    background-color: rebeccapurple;
+}
+p.text{
+    text-transform: uppercase;
+    text-align:center;
+
+}
+body{
+    --testing-color:#122334;
+    --testing-background-color:white;
+}
+p.text_variable{
+    background-color: var(--testing-color);
+    color: var(--testing-background-color);
+}
+.shaping{
+    height: 100;
+    /* clip-path: circle(40px); */
+    clip-path: circle(10% at 4rem 50%);
+    shape-outside: circle(50%);
+    background-color: aqua;
+}
