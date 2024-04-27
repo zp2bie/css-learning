@@ -1,3 +1,39 @@
 <html>
-    
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <a href="#" class="example">example</a>
+        <a href="#" class="example">example</a>
+        <a href="#" class="example">example</a>
+        <a href="#" class="example">example</a>
+
+        <a href="#" class="pseudo_ele_before">selector</a>
+        <a href="#" class="pseudo_ele_after">Selector</a>
+        <div href="#" class="pseudo_ele_select">selector world</div>
+        <li href="#" class="pseudo_ele_marker">selector world</li>
+
+
+
+        <div class="size"><div id="jsshaping" class="inner">hello</div></div>
+
+        <p class="text">hello</p>
+        <p class="text_variable">hello</p>
+
+        <div class="shaping"></div>
+        <button onclick="chle()">change length</button>
+        <button onclick="chsh()">change short</button>
+    </body>
+    <script>
+        function chle(){
+            document.getElementById("jsshaping").style.width='50%'
+            document.getElementById("jsshaping").style.backgroundColor="rebeccapurple"
+
+        }
+        function chsh(){
+            document.getElementById("jsshaping").style.width='80%'
+            document.getElementById("jsshaping").style.backgroundColor="#e23212"
+
+        }
+    </script>
 </html>
